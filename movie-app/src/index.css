@@ -1,0 +1,71 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; /* フォントの種類（書体） */
+  line-height: 1.5; /* 行間 */
+  font-weight: 400; /* フォントの太さ */
+
+  color-scheme: light dark; /* ライトモード、ダークモード両方のモードに対応できるよ */
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; /* 背景色 */
+
+  font-synthesis: none; /* 自動生成された偽の太字・斜体を防ぐ */
+  text-rendering: optimizeLegibility; /* 読みやすさを最優先して文字を描画 */
+  -webkit-font-smoothing: antialiased; /* 滑らかな文字表示（Mac/Safari/Chrome向け） */
+  -moz-osx-font-smoothing: grayscale; /* 滑らかな文字表示（Mac/Firefox向け） */
+}
+
+a {
+  font-weight: 500; /* フォントの太さ */
+  color: #646cff; /* 行間 */
+  text-decoration: inherit; /* 文字に線を引くスタイル(下線など)が親と同じ装飾 */
+}
+a:hover {
+  color: #535bf2;
+}
+/* ページ全体（またはコンテナ）を中央に配置するための基本レイアウト設定 */
+body {
+  margin: 0; /* 要素の外側の余白０ */
+  display: flex; /* 中の要素を柔軟に並べる */
+  place-items: center; /* 子要素を縦横両方で中央配置 */
+  max-width: 100vw;
+  min-width: 320px; /* 最小幅 */
+  min-height: 100vh; /* 高さを最低でも画面の高さにする(100%) */
+}
+
+h1 {
+  font-size: 3.2em; /* フォントサイズ */
+  line-height: 1.1; /* 行間 */
+}
+
+button {
+  border-radius: 8px; /* 角を丸くする */
+  border: 1px solid transparent; /* 透明な1pxのボーダー */
+  padding: 0.6em 1.2em; /* 内側の余白 */
+  font-size: 1em; /* フォントサイズ */
+  font-weight: 500; /* フォントの太さ */
+  font-family: inherit; /* フォントの種類（親要素と同じフォント) */
+  background-color: #1a1a1a; /* 背景色 */
+  cursor: pointer; /* ホバー時に マウスカーソルを「手の形」に変える */
+  transition: border-color 0.25s; /* ボーダーの色が変わるときに0.25秒かけて滑らかに変化 */
+}
+button:hover {
+  border-color: #646cff; /*マウスがボタンの上に乗ったとき、ボーダーの色を薄いブルー系 (#646cff) に変更*/
+}
+/*ボタンにフォーカスが当たったとき*/
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color; /* ブラウザが自動で選ぶ色のアウトラインを表示 */
+}
+
+/* ライトモード用 */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
