@@ -1,15 +1,9 @@
 #root {
-  max-width: 1280px;
-  margin: 0;
-  padding: 0;
-  text-align: left;
+  max-width: 100%;
+  margin: 0; /* 外側の余白 */
+  padding: 0; /* 内側の余白 */
+  text-align: left; /* テキスト左寄せ */
 }
-/* #root {
-  max-width: 1280px; 必要なら
-  margin: 0; 中央寄せをやめる
-  padding: 2rem;
-  text-align: left; ・
-} */
 
 /* ロゴの詳細 */
 .logo {
@@ -53,7 +47,7 @@
 body {
   background: hsl(0, 0%, 9%); /* 背景色 */
   margin: 0; /* 外側の余白 */
-  max-width: 100vw; /* 横幅を画面幅いっぱいに固定 */
+  max-width: 100%; /* 横幅を画面幅いっぱいに固定 */
   width: 100vw; /* 高さ */
   overflow-x: hidden; /* 横スクロールバーが出ないようにする */
 }
